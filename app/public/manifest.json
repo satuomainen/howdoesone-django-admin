@@ -1,0 +1,40 @@
+{
+  "short_name": "My Credit Cards",
+  "name": "Quick&Dirty Productions Presents",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/card-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/card-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/card-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "images/card-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/card-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/card-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

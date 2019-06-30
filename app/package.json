@@ -1,0 +1,43 @@
+{
+  "name": "cardapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.0.0-rc.0",
+    "axios": "^0.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "publish:app": "npm-run-all build publish:js publish:css publish:images publish:public",
+    "publish:js": "copyfiles --flat build/static/js/** ../public/js",
+    "publish:css": "copyfiles --flat build/static/css/** ../public/css",
+    "publish:images": "copyfiles --flat public/images/** ../public/images",
+    "publish:public": "copyfiles --flat build/*.* ../public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.2",
+    "copyfiles": "^2.1.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
